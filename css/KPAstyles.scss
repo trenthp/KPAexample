@@ -232,7 +232,6 @@ ul ul, ol ul, ul ol, ol ol {
 
 table {
   width: 100%;
-  margin-bottom: 1rem;
   border: 1px solid #e0e0e0;
   border-radius: 3px; }
   table tr {
@@ -256,6 +255,7 @@ table {
   table thead td,
   table tfoot th,
   table tfoot td {
+  	background: #f3f4f4;
     padding: 0.5rem 0.625rem 0.625rem;
     font-weight: bold;
     text-align: left; }
@@ -297,6 +297,13 @@ table.hover tbody tr:hover {
 	font-weight: 600;
 }
 
+.navbar-default .navbar-nav > .open > a,
+.navbar-default .navbar-nav > .open > a:hover,
+.navbar-default .navbar-nav > .open > a:focus {
+    color: $color-text;
+    background-color: #e7e7e7;
+}
+
 
 
 
@@ -325,6 +332,10 @@ div.topUserNav>div.topNav>div.dropdown>a {
     border: none;
 }
 
+.navbar-default .navbar-nav > li > a {
+    color: $color-text;
+}
+
 
 
 /*---------- Containers ----------*/
@@ -342,7 +353,7 @@ div.topUserNav>div.topNav>div.dropdown>a {
 
 /*---------- Tables ----------*/
 .k-alt {
-	background-color: #fff;
+	background-color: #fefefe;
 }
 
 .k-grid tr td {
@@ -361,10 +372,15 @@ table thead tr, table thead th, table thead td, table tfoot th, table tfoot td {
     text-align: left;
 }
 
-.k-grid-header th.k-header {
-	border-top: 1px solid #f1f1f1;
+.k-grid-header th.k-header,
+.table thead {
+	border-top: 1px solid #e0e0e0;
 	background-color: #f3f4f4; 
 	font-weight: 600;
+}
+
+.k-grid tr td {
+	border-bottom: 1px solid #e0e0e0;
 }
 
 
@@ -485,6 +501,14 @@ table tbody {
     margin-top: 200px;
 }
 
+.hrm-breadcrumb .row > :first-child > a {
+    color: $color-text;
+}
+
+.hrm-breadcrumb .row > :first-child > a:hover {
+    color: $color-text-link;
+}
+
 
 
 
@@ -563,6 +587,11 @@ div.topNav > div.dropdown > a {
 	font-weight: 600;
 }
 
+#ctl00__cphMain__ucTrainingListView_divAdd {
+	border-bottom: 3px solid #f1f1f1;
+	margin-bottom: 15px;
+}
+
 
 
 
@@ -573,6 +602,20 @@ div.topNav > div.dropdown > a {
 /*------- Succeed specific --------*/
 .pnlMainMenu {
     background-color: #fff;
+}
+
+.SucceedMenu {
+	padding-top: 20px;
+}
+
+.appMenu {
+	padding-top: 0px;
+}
+
+.MainMenu .navbar-nav>li>a {
+    color: $color-text;
+    font-size: 13px;
+    font-weight: 600;
 }
 
 .MainMenu .navbar-nav>li>a:hover {
@@ -586,23 +629,95 @@ div.topNav > div.dropdown > a {
     margin-top: -1px;
 }
 
+.MainMenu .navbar-nav > li > a:hover {
+    color: $color-text-link;
+}
 
+.MainBarPosition {
+	margin-top: 20px;
+	margin-bottom: 50px;
+}
 
+.s-header-layout {
+    font-size: 25px;
+    color: $color-text;
+    margin-bottom: 20px;
+    margin-top: 0px;
+}
 
+.navbar-default {
+	background: none;
+	border: none;
+	box-shadow: none;
+}
 
+.navbar-nav .dropdown a {
+	color: $color-text;
+	font-size: 15px;
+	font-weight: 600;
+}
 
+.btn-default {
+	text-shadow: none;
+	background-repeat: no-repeat;
+	background-image: none;
+}
 
+.SearchBar {
+	margin-top: 25px;
+}
 
+.table-striped > tbody > tr:nth-of-type(odd) {
+    background-color: #fefefe;
+}
 
+.table-hover>tbody>tr:hover {
+	background: #ccdbe4;
+}
 
+.table tbody td:hover a {
+	background: #ccdbe4;
+    color: $color-text-link;
+}
 
+.table tbody tr:hover td a {
+	background: #ccdbe4;
+    color: $color-text-link;
+}
 
+td a {
+	color: $color-text-link;
+}
 
+tbody > tr.MultipleSelectRow > td {
+	padding-bottom: 20px;
+}
 
+.table-bordered > tbody > tr > td,
+.table-bordered tbody tr td:nth-of-type(n+2) {
+	border-left: none;
+	border-right: none;
+}
 
+thead tr th table,
+thead tr th table tbody,
+thead tr th table tbody tr,
+thead tr th table tbody tr td {
+	border: none;
+	border-left: none;
+	border-right: none;
+	border-image: 0;
+}
 
+.s-grid-pager {
+	float: left;
+	margin-left: 10px;
+	margin-right: 20px;
+}
 
-
+.pager-button {
+	margin-right: 0;
+}
 
 
 

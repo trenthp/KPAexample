@@ -173,7 +173,7 @@ function __doPostBack(eventTarget, eventArgument) {
 					<li class=""><a href="https://lossfreerx.com/IT/Incidents.aspx" class="">Incidents</a></li><li class=""><a href="https://lossfreerx.com/IT/Submissions.aspx" class="">Claim Submissions</a></li>
 				</ul></li><li class=""><a href="https://lossfreerx.com/IT/Trending.aspx" class="">Trending</a></li><li class=" dropdown"><a data-toggle="dropdown" class="dropdown-toggle">Reports <b class="caret"></b></a><ul class="menu-font dropdown-menu">
 					<li class=""><a href="https://lossfreerx.com/IT/Reports/OSHA.aspx" class="">OSHA Reports</a></li><li class=""><a href="https://lossfreerx.com/IT/Reports/ClaimForms.aspx" class="">Claim Forms</a></li><li class=""><a href="https://lossfreerx.com/IT/Reports/LagReport.aspx" class="">Lag Report</a></li><li class=""><a href="https://lossfreerx.com/IT/Reports/ClaimNotes.aspx" class="">Claim Notes</a></li><li class=""><a href="https://lossfreerx.com/IT/Reports/DataExport.aspx" class="">Export Data</a></li><li class=""><a href="https://lossfreerx.com/IT/Reports/CorrectiveActions.aspx" class="">Corrective Actions</a></li>
-				</ul></li><li class=" dropdown"><a data-toggle="dropdown" class="dropdown-toggle"><i class="glyphicon glyphicon-cog"></i> <b class="caret"></b></a><ul class="menu-font dropdown-menu">
+				</ul></li><li class=" dropdown"><a data-toggle="dropdown" class="dropdown-toggle">Settings <b class="caret"></b></a><ul class="menu-font dropdown-menu">
 					<li class=""><a href="https://lossfreerx.com/Setup/Notify.aspx" class="">Email Distribution</a></li><li class=""><a href="https://lossfreerx.com/Setup/Import.aspx?page=0" class="">Import Data</a></li><li class=""><a href="https://lossfreerx.com/IT/Setup.aspx" class="">Manage Lists</a></li><li class=""><a href="https://lossfreerx.com/Setup/RootCause.aspx" class="">Root Causes</a></li>
 				</ul></li>
 			</ul>
@@ -183,17 +183,19 @@ function __doPostBack(eventTarget, eventArgument) {
     <span id="ctl00_ctl00_ctl00_content_content_LiteMenu"></span>
     
     <div id="ctl00_ctl00_ctl00_content_content_content_tbrMain" class="SearchBar row">
-	<div class="col-xs-4">
-		<div class="input-group">
-			<input name="ctl00$ctl00$ctl00$content$content$content$tbrMain$Textbox" type="text" id="ctl00_ctl00_ctl00_content_content_content_tbrMain_Textbox" class="form-control"><span onclick="__doPostBack(&#39;ctl00$ctl00$ctl00$content$content$content$tbrMain$Button&#39;,&#39;&#39;)" type="button" id="ctl00_ctl00_ctl00_content_content_content_tbrMain_Button" class="input-group-addon glyphicon glyphicon-search" style="cursor:pointer;display:inline-block;height:34px;border-color:green;"></span>
-		</div><span id="ctl00_ctl00_ctl00_content_content_content_tbrMain_ClearButton"></span>
-	</div><div class="col-xs-1" style="padding-top:8px;">
+    	<div class="col-sm-4">
+    		<div class="input-group">
+    			<input name="ctl00$ctl00$ctl00$content$content$content$tbrMain$Textbox" type="text" id="ctl00_ctl00_ctl00_content_content_content_tbrMain_Textbox" class="form-control"><span onclick="__doPostBack(&#39;ctl00$ctl00$ctl00$content$content$content$tbrMain$Button&#39;,&#39;&#39;)" type="button" id="ctl00_ctl00_ctl00_content_content_content_tbrMain_Button" class="input-group-addon glyphicon glyphicon-search" style="cursor:pointer;display:inline-block;height:34px;border-color:green;"></span>
+    		</div><span id="ctl00_ctl00_ctl00_content_content_content_tbrMain_ClearButton"></span>
+    	</div>
+        <div class="col-sm-1" style="padding-top:8px;">
 		<span id="ctl00_ctl00_ctl00_content_content_content_tbrMain_Link" style="margin-left:-23px;"><a onclick="__doPostBack(&#39;ctl00$ctl00$ctl00$content$content$content$tbrMain$Link&#39;,&#39;&#39;);return false;" href="https://lossfreerx.com/IT/Incidents.aspx#">Advanced</a></span>
-	</div><div class="col-xs-7 text-right">
-		<div id="ctl00_ctl00_ctl00_content_content_content_tbrMain_Toolbar" class="btn-group">
-			<button onclick="__doPostBack(&#39;ctl00$ctl00$ctl00$content$content$content$tbrMain$Toolbar&#39;,&#39;0&#39;)" type="button" class="btn btn-default"><span class="glyphicon glyphicon-plus-sign " style="color:#5CB85C;"></span> New</button><button onclick="__doPostBack(&#39;ctl00$ctl00$ctl00$content$content$content$tbrMain$Toolbar&#39;,&#39;2&#39;)" type="button" class="btn btn-default"><span class="glyphicon glyphicon-cloud-download "></span> Download</button><button onclick="__doPostBack(&#39;ctl00$ctl00$ctl00$content$content$content$tbrMain$Toolbar&#39;,&#39;3&#39;)" type="button" class="btn btn-default"><span class="glyphicon glyphicon-log-in "></span> Archive</button><button onclick="__doPostBack(&#39;ctl00$ctl00$ctl00$content$content$content$tbrMain$Toolbar&#39;,&#39;5&#39;)" type="button" class="btn btn-default" title="Export to an Excel spreadsheet"><span class="glyphicon glyphicon-export "></span> Export</button>
-		</div>
-	</div>
+    	</div>
+        <div class="col-sm-7 text-right">
+    		<div id="ctl00_ctl00_ctl00_content_content_content_tbrMain_Toolbar" class="btn-group">
+    			<button type="button" class="btn btn-default">New</button><button type="button" class="btn btn-default">Download</button><button type="button" class="btn btn-default">Archive</button><button onclick="__doPostBack(&#39;ctl00$ctl00$ctl00$content$content$content$tbrMain$Toolbar&#39;,&#39;5&#39;)" type="button" class="btn btn-default" title="Export to an Excel spreadsheet">Export</button>
+    		</div>
+    	</div>
 </div>
     <span id="ctl00_ctl00_ctl00_content_content_content_gvIncidents_Start"></span><div>
 	<table class="s-gridview table table-striped table-bordered table-hover" cellspacing="0" border="0" id="ctl00_ctl00_ctl00_content_content_content_gvIncidents" style="border-collapse:collapse;">
@@ -222,17 +224,19 @@ function __doPostBack(eventTarget, eventArgument) {
 				</th><th class="Sorting" scope="col" style="width:90px;"><table cellpadding="0" cellspacing="0" style="font-weight:bold;height:32px;cursor:pointer;" align="Center">
 					<tbody><tr>
 						<td onclick="__doPostBack(&#39;ctl00$ctl00$ctl00$content$content$content$gvIncidents&#39;,&#39;Sort$Occurred&#39;)" rowspan="2">Occurred</td>
-						<td valign="bottom" onclick="__doPostBack(&#39;ctl00$ctl00$ctl00$content$content$content$gvIncidents&#39;,&#39;Sort$Occurred&#39;)"><span class="ui-icon ui-icon-triangle-1-n" style="margin-bottom:-5px;"></span></td>
+						<td valign="bottom" onclick="__doPostBack(&#39;ctl00$ctl00$ctl00$content$content$content$gvIncidents&#39;,&#39;Sort$Occurred&#39;)"></td>
 					</tr>
 					<tr>
-						<td valign="top" onclick="__doPostBack(&#39;ctl00$ctl00$ctl00$content$content$content$gvIncidents&#39;,&#39;Sort$Occurred&#39;)"><span class="ui-icon ui-icon-triangle-1-s ui-state-disabled" style="margin-top:-5px;"></span></td>
+						<td valign="top" onclick="__doPostBack(&#39;ctl00$ctl00$ctl00$content$content$content$gvIncidents&#39;,&#39;Sort$Occurred&#39;)"></td>
 					</tr>
 				</tbody></table>
 				</th><th class="Sortable" scope="col" style="width:65px;"><table cellpadding="0" cellspacing="0" style="font-weight:bold;height:32px;cursor:pointer;" align="NotSet">
-					<tbody><tr>
-						<td onclick="__doPostBack(&#39;ctl00$ctl00$ctl00$content$content$content$gvIncidents&#39;,&#39;Sort$Status&#39;)">Status</td>
-					</tr>
-				</tbody></table>
+					<tbody>
+                        <tr>
+    						<td>Status</td>
+    					</tr>
+    				</tbody>
+                </table>
 				</th><th class="Sortable" align="center" scope="col"><table cellpadding="0" cellspacing="0" style="font-weight:bold;height:32px;cursor:pointer;" align="Left">
 					<tbody><tr>
 						<td onclick="__doPostBack(&#39;ctl00$ctl00$ctl00$content$content$content$gvIncidents&#39;,&#39;Sort$Type&#39;)">Type</td>
@@ -292,7 +296,7 @@ function __doPostBack(eventTarget, eventArgument) {
 							</div><div class="next">
 								<a href="javascript:__doPostBack(&#39;ctl00$ctl00$ctl00$content$content$content$gvIncidents&#39;,&#39;Page$2&#39;)">&gt;</a>
 							</div>
-						</div><div class="s-grid-page-selector" style="width:150px;">
+						</div><div class="s-grid-page-selector" style="width:200px;">
 							<span>Page:&nbsp;</span><input name="ctl00$ctl00$ctl00$content$content$content$gvIncidents$ctl13$txtPageNumber" type="text" value="1" id="ctl00_ctl00_ctl00_content_content_content_gvIncidents_ctl13_txtPageNumber" class="pager-text" data-grid-target="ctl00$ctl00$ctl00$content$content$content$gvIncidents"><button id="ctl00_ctl00_ctl00_content_content_content_gvIncidents_ctl13_btnPageGo" name="ctl00$ctl00$ctl00$content$content$content$gvIncidents$ctl13$btnPageGo" type="button" class="pager-button btn btn-default" onclick="" data-grid-target="ctl00$ctl00$ctl00$content$content$content$gvIncidents">Go</button><span class="control-label">&nbsp;/ 389</span>
 						</div>
 					</div><div class="col-xs-3">
@@ -307,7 +311,7 @@ function __doPostBack(eventTarget, eventArgument) {
 						</div>
 					</div><div class="col-xs-4 text-right">
 						<div class="btn-group">
-							<button id="ctl00_ctl00_ctl00_content_content_content_gvIncidents_ctl13_ctl17" name="ctl00$ctl00$ctl00$content$content$content$gvIncidents$ctl13$ctl17" type="button" class="active btn btn-default" onclick="" style="cursor:default;"><span class="glyphicon glyphicon-ok "></span> Active</button><button id="ctl00_ctl00_ctl00_content_content_content_gvIncidents_ctl13_ctl18" name="ctl00$ctl00$ctl00$content$content$content$gvIncidents$ctl13$ctl18" type="button" class=" btn btn-default" onclick="__doPostBack(&#39;ctl00$ctl00$ctl00$content$content$content$gvIncidents&#39;,&#39;sgvontogglearchive&#39;)"><span class="glyphicon glyphicon-log-in "></span> Archived</button>
+							<button id="ctl00_ctl00_ctl00_content_content_content_gvIncidents_ctl13_ctl17" name="ctl00$ctl00$ctl00$content$content$content$gvIncidents$ctl13$ctl17" type="button" class="active btn btn-default" onclick="" style="cursor:default;">Active</button><button id="ctl00_ctl00_ctl00_content_content_content_gvIncidents_ctl13_ctl18" name="ctl00$ctl00$ctl00$content$content$content$gvIncidents$ctl13$ctl18" type="button" class=" btn btn-default" onclick="__doPostBack(&#39;ctl00$ctl00$ctl00$content$content$content$gvIncidents&#39;,&#39;sgvontogglearchive&#39;)">Archived</button>
 						</div>
 					</div>
 				</div></td>
