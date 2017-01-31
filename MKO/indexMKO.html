@@ -2,536 +2,351 @@
 <!-- saved from url=(0075)https://www.mykpaonline.com/Clients/group/TrainingList.aspx?type=instructor -->
 <html xmlns="http://www.w3.org/1999/xhtml">
 <head>
-<meta http-equiv="Content-Type" content="text/html; charset=UTF-8">
-<meta http-equiv="X-UA-Compatible" content="IE=10">
-<script type="text/javascript" src="f2693df2cf"></script>
-<script src="nr-1016.min.js"></script>
+    <meta http-equiv="Content-Type" content="text/html; charset=UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=10">
+    <script type="text/javascript" src="f2693df2cf"></script>
+    <script src="nr-1016.min.js"></script>
 
-<title>
-	Onsite Training
-</title>
-
-
-
-<link href="Master" rel="stylesheet">
-<link href="AppBundle" rel="stylesheet">
+    <title>
+    	Onsite Training
+    </title>
 
 
-<link href="../css/bootstrap-theme.css" rel="stylesheet" type="text/css">
-<link href="../css/bootstrap.css" rel="stylesheet" type="text/css">
+
+    <link href="Master" rel="stylesheet">
+    <link href="AppBundle" rel="stylesheet">
 
 
-<script src="jQuery"></script>
-<script src="jQueryasp"></script>
-<script src="Bootstrap"></script>
-<script src="TimeoutScriptJs"></script>
+    <link href="../css/bootstrap-theme.css" rel="stylesheet" type="text/css">
+    <link href="../css/bootstrap.css" rel="stylesheet" type="text/css">
 
-    <script type="text/javascript" src="TrainingListViewScript.js"></script>
-    
-    <script type="text/javascript">
-        function uploadCompleted(sender, e) {
-            if (!e || (e && e.response && e.response.IsSuccessful)) {
-                __doPostBack('ctl00$_cphMain$_updatePanel', 'rebindAttachments');
-            } else if (e && e.response) {
-                alert(e.response.FileName); // filename becomes an error message in the event of an exception.
+
+    <script src="jQuery"></script>
+    <script src="jQueryasp"></script>
+    <script src="Bootstrap"></script>
+    <script src="TimeoutScriptJs"></script>
+
+        <script type="text/javascript" src="TrainingListViewScript.js"></script>
+        
+        <script type="text/javascript">
+            function uploadCompleted(sender, e) {
+                if (!e || (e && e.response && e.response.IsSuccessful)) {
+                    __doPostBack('ctl00$_cphMain$_updatePanel', 'rebindAttachments');
+                } else if (e && e.response) {
+                    alert(e.response.FileName); // filename becomes an error message in the event of an exception.
+                }
             }
-        }
-    </script>
-<link href="WebResource.axd" type="text/css" rel="stylesheet"><link href="WebResource(1).axd" type="text/css" rel="stylesheet"></head>
+        </script>
+    <link href="WebResource.axd" type="text/css" rel="stylesheet"><link href="WebResource(1).axd" type="text/css" rel="stylesheet">
+
+
+    <link href="../css/KPAstyles.css" rel="stylesheet" type="text/css">
+
+</head>
+
+
 <body cz-shortcut-listen="true">
 
-    <form method="post" action="https://www.mykpaonline.com/Clients/group/TrainingList.aspx?type=instructor" id="aspnetForm">
-<div class="aspNetHidden">
-<input type="hidden" name="__EVENTTARGET" id="__EVENTTARGET" value="">
-<input type="hidden" name="__EVENTARGUMENT" id="__EVENTARGUMENT" value="">
-<input type="hidden" name="__LASTFOCUS" id="__LASTFOCUS" value="">
-<input type="hidden" name="__VIEWSTATE" id="__VIEWSTATE" value="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">
-</div>
-
-<script type="text/javascript">
-//<![CDATA[
-var theForm = document.forms['aspnetForm'];
-if (!theForm) {
-    theForm = document.aspnetForm;
-}
-function __doPostBack(eventTarget, eventArgument) {
-    if (!theForm.onsubmit || (theForm.onsubmit() != false)) {
-        theForm.__EVENTTARGET.value = eventTarget;
-        theForm.__EVENTARGUMENT.value = eventArgument;
-        theForm.submit();
-    }
-}
-//]]>
-</script>
 
 
-<script src="./Onsite Training_files/WebResource(2).axd" type="text/javascript"></script>
 
 
-<script src="./Onsite Training_files/ScriptResource.axd" type="text/javascript"></script>
-<script src="./Onsite Training_files/ScriptResource(1).axd" type="text/javascript"></script>
-<script src="./Onsite Training_files/ScriptResource(2).axd" type="text/javascript"></script>
-<script src="./Onsite Training_files/ScriptResource(3).axd" type="text/javascript"></script>
-<script src="./Onsite Training_files/ScriptResource(4).axd" type="text/javascript"></script>
-<script src="./Onsite Training_files/ScriptResource(5).axd" type="text/javascript"></script>
-<script src="./Onsite Training_files/ScriptResource(6).axd" type="text/javascript"></script>
-<script src="./Onsite Training_files/ScriptResource(7).axd" type="text/javascript"></script>
-<script src="./Onsite Training_files/ScriptResource(8).axd" type="text/javascript"></script>
-<script src="./Onsite Training_files/ScriptResource(9).axd" type="text/javascript"></script>
-<script src="./Onsite Training_files/ScriptResource(10).axd" type="text/javascript"></script>
-<script src="./Onsite Training_files/ScriptResource(11).axd" type="text/javascript"></script>
-<script src="./Onsite Training_files/ScriptResource(12).axd" type="text/javascript"></script>
-<script src="./Onsite Training_files/ScriptResource(13).axd" type="text/javascript"></script>
-<script src="./Onsite Training_files/ScriptResource(14).axd" type="text/javascript"></script>
-<script type="text/javascript">
-//<![CDATA[
-Type.registerNamespace('Kpa.AdminWeb.Services');
-Kpa.AdminWeb.Services.AuthenticationService=function() {
-Kpa.AdminWeb.Services.AuthenticationService.initializeBase(this);
-this._timeout = 0;
-this._userContext = null;
-this._succeeded = null;
-this._failed = null;
-}
-Kpa.AdminWeb.Services.AuthenticationService.prototype={
-_get_path:function() {
- var p = this.get_path();
- if (p) return p;
- else return Kpa.AdminWeb.Services.AuthenticationService._staticInstance.get_path();},
-ValidateSession:function(succeededCallback, failedCallback, userContext) {
-return this._invoke(this._get_path(), 'ValidateSession',false,{},succeededCallback,failedCallback,userContext); }}
-Kpa.AdminWeb.Services.AuthenticationService.registerClass('Kpa.AdminWeb.Services.AuthenticationService',Sys.Net.WebServiceProxy);
-Kpa.AdminWeb.Services.AuthenticationService._staticInstance = new Kpa.AdminWeb.Services.AuthenticationService();
-Kpa.AdminWeb.Services.AuthenticationService.set_path = function(value) { Kpa.AdminWeb.Services.AuthenticationService._staticInstance.set_path(value); }
-Kpa.AdminWeb.Services.AuthenticationService.get_path = function() { return Kpa.AdminWeb.Services.AuthenticationService._staticInstance.get_path(); }
-Kpa.AdminWeb.Services.AuthenticationService.set_timeout = function(value) { Kpa.AdminWeb.Services.AuthenticationService._staticInstance.set_timeout(value); }
-Kpa.AdminWeb.Services.AuthenticationService.get_timeout = function() { return Kpa.AdminWeb.Services.AuthenticationService._staticInstance.get_timeout(); }
-Kpa.AdminWeb.Services.AuthenticationService.set_defaultUserContext = function(value) { Kpa.AdminWeb.Services.AuthenticationService._staticInstance.set_defaultUserContext(value); }
-Kpa.AdminWeb.Services.AuthenticationService.get_defaultUserContext = function() { return Kpa.AdminWeb.Services.AuthenticationService._staticInstance.get_defaultUserContext(); }
-Kpa.AdminWeb.Services.AuthenticationService.set_defaultSucceededCallback = function(value) { Kpa.AdminWeb.Services.AuthenticationService._staticInstance.set_defaultSucceededCallback(value); }
-Kpa.AdminWeb.Services.AuthenticationService.get_defaultSucceededCallback = function() { return Kpa.AdminWeb.Services.AuthenticationService._staticInstance.get_defaultSucceededCallback(); }
-Kpa.AdminWeb.Services.AuthenticationService.set_defaultFailedCallback = function(value) { Kpa.AdminWeb.Services.AuthenticationService._staticInstance.set_defaultFailedCallback(value); }
-Kpa.AdminWeb.Services.AuthenticationService.get_defaultFailedCallback = function() { return Kpa.AdminWeb.Services.AuthenticationService._staticInstance.get_defaultFailedCallback(); }
-Kpa.AdminWeb.Services.AuthenticationService.set_enableJsonp = function(value) { Kpa.AdminWeb.Services.AuthenticationService._staticInstance.set_enableJsonp(value); }
-Kpa.AdminWeb.Services.AuthenticationService.get_enableJsonp = function() { return Kpa.AdminWeb.Services.AuthenticationService._staticInstance.get_enableJsonp(); }
-Kpa.AdminWeb.Services.AuthenticationService.set_jsonpCallbackParameter = function(value) { Kpa.AdminWeb.Services.AuthenticationService._staticInstance.set_jsonpCallbackParameter(value); }
-Kpa.AdminWeb.Services.AuthenticationService.get_jsonpCallbackParameter = function() { return Kpa.AdminWeb.Services.AuthenticationService._staticInstance.get_jsonpCallbackParameter(); }
-Kpa.AdminWeb.Services.AuthenticationService.set_path("/Services/AuthenticationService.asmx");
-Kpa.AdminWeb.Services.AuthenticationService.ValidateSession= function(onSuccess,onFailed,userContext) {Kpa.AdminWeb.Services.AuthenticationService._staticInstance.ValidateSession(onSuccess,onFailed,userContext); }
-Type.registerNamespace('Kpa.AdminWeb.Services');
-Kpa.AdminWeb.Services.OnsiteTrainingService=function() {
-Kpa.AdminWeb.Services.OnsiteTrainingService.initializeBase(this);
-this._timeout = 0;
-this._userContext = null;
-this._succeeded = null;
-this._failed = null;
-}
-Kpa.AdminWeb.Services.OnsiteTrainingService.prototype={
-_get_path:function() {
- var p = this.get_path();
- if (p) return p;
- else return Kpa.AdminWeb.Services.OnsiteTrainingService._staticInstance.get_path();},
-GetAssociatedStudents:function(trainingId,accountId,succeededCallback, failedCallback, userContext) {
-return this._invoke(this._get_path(), 'GetAssociatedStudents',false,{trainingId:trainingId,accountId:accountId},succeededCallback,failedCallback,userContext); },
-SubmitAssociatedStudents:function(associatedJson,trainingId,succeededCallback, failedCallback, userContext) {
-return this._invoke(this._get_path(), 'SubmitAssociatedStudents',false,{associatedJson:associatedJson,trainingId:trainingId},succeededCallback,failedCallback,userContext); }}
-Kpa.AdminWeb.Services.OnsiteTrainingService.registerClass('Kpa.AdminWeb.Services.OnsiteTrainingService',Sys.Net.WebServiceProxy);
-Kpa.AdminWeb.Services.OnsiteTrainingService._staticInstance = new Kpa.AdminWeb.Services.OnsiteTrainingService();
-Kpa.AdminWeb.Services.OnsiteTrainingService.set_path = function(value) { Kpa.AdminWeb.Services.OnsiteTrainingService._staticInstance.set_path(value); }
-Kpa.AdminWeb.Services.OnsiteTrainingService.get_path = function() { return Kpa.AdminWeb.Services.OnsiteTrainingService._staticInstance.get_path(); }
-Kpa.AdminWeb.Services.OnsiteTrainingService.set_timeout = function(value) { Kpa.AdminWeb.Services.OnsiteTrainingService._staticInstance.set_timeout(value); }
-Kpa.AdminWeb.Services.OnsiteTrainingService.get_timeout = function() { return Kpa.AdminWeb.Services.OnsiteTrainingService._staticInstance.get_timeout(); }
-Kpa.AdminWeb.Services.OnsiteTrainingService.set_defaultUserContext = function(value) { Kpa.AdminWeb.Services.OnsiteTrainingService._staticInstance.set_defaultUserContext(value); }
-Kpa.AdminWeb.Services.OnsiteTrainingService.get_defaultUserContext = function() { return Kpa.AdminWeb.Services.OnsiteTrainingService._staticInstance.get_defaultUserContext(); }
-Kpa.AdminWeb.Services.OnsiteTrainingService.set_defaultSucceededCallback = function(value) { Kpa.AdminWeb.Services.OnsiteTrainingService._staticInstance.set_defaultSucceededCallback(value); }
-Kpa.AdminWeb.Services.OnsiteTrainingService.get_defaultSucceededCallback = function() { return Kpa.AdminWeb.Services.OnsiteTrainingService._staticInstance.get_defaultSucceededCallback(); }
-Kpa.AdminWeb.Services.OnsiteTrainingService.set_defaultFailedCallback = function(value) { Kpa.AdminWeb.Services.OnsiteTrainingService._staticInstance.set_defaultFailedCallback(value); }
-Kpa.AdminWeb.Services.OnsiteTrainingService.get_defaultFailedCallback = function() { return Kpa.AdminWeb.Services.OnsiteTrainingService._staticInstance.get_defaultFailedCallback(); }
-Kpa.AdminWeb.Services.OnsiteTrainingService.set_enableJsonp = function(value) { Kpa.AdminWeb.Services.OnsiteTrainingService._staticInstance.set_enableJsonp(value); }
-Kpa.AdminWeb.Services.OnsiteTrainingService.get_enableJsonp = function() { return Kpa.AdminWeb.Services.OnsiteTrainingService._staticInstance.get_enableJsonp(); }
-Kpa.AdminWeb.Services.OnsiteTrainingService.set_jsonpCallbackParameter = function(value) { Kpa.AdminWeb.Services.OnsiteTrainingService._staticInstance.set_jsonpCallbackParameter(value); }
-Kpa.AdminWeb.Services.OnsiteTrainingService.get_jsonpCallbackParameter = function() { return Kpa.AdminWeb.Services.OnsiteTrainingService._staticInstance.get_jsonpCallbackParameter(); }
-Kpa.AdminWeb.Services.OnsiteTrainingService.set_path("/Services/OnsiteTrainingService.asmx");
-Kpa.AdminWeb.Services.OnsiteTrainingService.GetAssociatedStudents= function(trainingId,accountId,onSuccess,onFailed,userContext) {Kpa.AdminWeb.Services.OnsiteTrainingService._staticInstance.GetAssociatedStudents(trainingId,accountId,onSuccess,onFailed,userContext); }
-Kpa.AdminWeb.Services.OnsiteTrainingService.SubmitAssociatedStudents= function(associatedJson,trainingId,onSuccess,onFailed,userContext) {Kpa.AdminWeb.Services.OnsiteTrainingService._staticInstance.SubmitAssociatedStudents(associatedJson,trainingId,onSuccess,onFailed,userContext); }
-Type.registerNamespace('Kpa.AdminWeb.Services');
-Kpa.AdminWeb.Services.UserSuggestionService=function() {
-Kpa.AdminWeb.Services.UserSuggestionService.initializeBase(this);
-this._timeout = 0;
-this._userContext = null;
-this._succeeded = null;
-this._failed = null;
-}
-Kpa.AdminWeb.Services.UserSuggestionService.prototype={
-_get_path:function() {
- var p = this.get_path();
- if (p) return p;
- else return Kpa.AdminWeb.Services.UserSuggestionService._staticInstance.get_path();},
-AddUserSuggestion:function(userSuggestion,contactId,succeededCallback, failedCallback, userContext) {
-return this._invoke(this._get_path(), 'AddUserSuggestion',false,{userSuggestion:userSuggestion,contactId:contactId},succeededCallback,failedCallback,userContext); }}
-Kpa.AdminWeb.Services.UserSuggestionService.registerClass('Kpa.AdminWeb.Services.UserSuggestionService',Sys.Net.WebServiceProxy);
-Kpa.AdminWeb.Services.UserSuggestionService._staticInstance = new Kpa.AdminWeb.Services.UserSuggestionService();
-Kpa.AdminWeb.Services.UserSuggestionService.set_path = function(value) { Kpa.AdminWeb.Services.UserSuggestionService._staticInstance.set_path(value); }
-Kpa.AdminWeb.Services.UserSuggestionService.get_path = function() { return Kpa.AdminWeb.Services.UserSuggestionService._staticInstance.get_path(); }
-Kpa.AdminWeb.Services.UserSuggestionService.set_timeout = function(value) { Kpa.AdminWeb.Services.UserSuggestionService._staticInstance.set_timeout(value); }
-Kpa.AdminWeb.Services.UserSuggestionService.get_timeout = function() { return Kpa.AdminWeb.Services.UserSuggestionService._staticInstance.get_timeout(); }
-Kpa.AdminWeb.Services.UserSuggestionService.set_defaultUserContext = function(value) { Kpa.AdminWeb.Services.UserSuggestionService._staticInstance.set_defaultUserContext(value); }
-Kpa.AdminWeb.Services.UserSuggestionService.get_defaultUserContext = function() { return Kpa.AdminWeb.Services.UserSuggestionService._staticInstance.get_defaultUserContext(); }
-Kpa.AdminWeb.Services.UserSuggestionService.set_defaultSucceededCallback = function(value) { Kpa.AdminWeb.Services.UserSuggestionService._staticInstance.set_defaultSucceededCallback(value); }
-Kpa.AdminWeb.Services.UserSuggestionService.get_defaultSucceededCallback = function() { return Kpa.AdminWeb.Services.UserSuggestionService._staticInstance.get_defaultSucceededCallback(); }
-Kpa.AdminWeb.Services.UserSuggestionService.set_defaultFailedCallback = function(value) { Kpa.AdminWeb.Services.UserSuggestionService._staticInstance.set_defaultFailedCallback(value); }
-Kpa.AdminWeb.Services.UserSuggestionService.get_defaultFailedCallback = function() { return Kpa.AdminWeb.Services.UserSuggestionService._staticInstance.get_defaultFailedCallback(); }
-Kpa.AdminWeb.Services.UserSuggestionService.set_enableJsonp = function(value) { Kpa.AdminWeb.Services.UserSuggestionService._staticInstance.set_enableJsonp(value); }
-Kpa.AdminWeb.Services.UserSuggestionService.get_enableJsonp = function() { return Kpa.AdminWeb.Services.UserSuggestionService._staticInstance.get_enableJsonp(); }
-Kpa.AdminWeb.Services.UserSuggestionService.set_jsonpCallbackParameter = function(value) { Kpa.AdminWeb.Services.UserSuggestionService._staticInstance.set_jsonpCallbackParameter(value); }
-Kpa.AdminWeb.Services.UserSuggestionService.get_jsonpCallbackParameter = function() { return Kpa.AdminWeb.Services.UserSuggestionService._staticInstance.get_jsonpCallbackParameter(); }
-Kpa.AdminWeb.Services.UserSuggestionService.set_path("/Services/UserSuggestionService.asmx");
-Kpa.AdminWeb.Services.UserSuggestionService.AddUserSuggestion= function(userSuggestion,contactId,onSuccess,onFailed,userContext) {Kpa.AdminWeb.Services.UserSuggestionService._staticInstance.AddUserSuggestion(userSuggestion,contactId,onSuccess,onFailed,userContext); }
-//]]>
-</script>
-
-<div class="aspNetHidden">
-
-	<input type="hidden" name="__VIEWSTATEGENERATOR" id="__VIEWSTATEGENERATOR" value="383FC5B0">
-	<input type="hidden" name="__EVENTVALIDATION" id="__EVENTVALIDATION" value="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">
-</div>
-        <script type="text/javascript">
-            Sys.WebForms.PageRequestManager.getInstance().add_pageLoaded(function (sender, args) {
-                // due to issues with the browsers, we need to disable select2 for mobile devices
-                var $dropdowns = $('select:not([name=ctl00__cphMain__gvItems_length])');
-                if (navigator.userAgent.indexOf("Windows Phone") == -1 && !isTouchDevice()) {
-                    $dropdowns.select2({
-                        selectOnClose: true
-                    });
-                } else {
-                    $dropdowns.addClass('form-control');
-                }
-            });
-        </script>
-
-        <script type="text/javascript">
-//<![CDATA[
-Sys.WebForms.PageRequestManager._initialize('ctl00$_scriptManager', 'aspnetForm', ['tctl00$_cphMain$_updatePanel',''], [], [], 90, 'ctl00');
-//]]>
-</script>
-
-        <script src="./Onsite Training_files/MasterJs"></script>
-
-        
-        <div id="preparingFileDiv" class="reportDownloadDiv" style="display: none;">
-            <img src="./Onsite Training_files/ajax-loader.gif" alt="Generating report" style="margin-left: 5px; margin-top: 5px;">
-            <span style="margin-left: 5px;">We are preparing your report, please wait...</span>
-        </div>
-
-        <div id="errorInDownloadingDiv" class="reportDownloadDiv" style="display: none;">
-            <img src="./Onsite Training_files/reject.png" alt="Error generating report" style="margin-left: 5px; margin-top: 5px;">
-            Error generating your report, please try again.
-        </div>
-
-        <div id="container">
-            <div id="header" style="width:100%">
+    <div id="container">
+        <div id="header" style="width:100%">
                 
                 
-                <div class="gradientHeaderAndFooter" style="height: 96px;">
-                    <div style="width: 1024px; margin-left: auto; margin-right: auto;">
-                        <div style="padding-top: 24px;">
-                            <div class="clientLogo">
-                                
+            <div class="gradientHeaderAndFooter" style="height: 140px;">
+                <div style="width: 1024px; margin-left: auto; margin-right: auto;">
+                    <div style="padding-top: 24px;">
+                        <div class="clientLogo">
+                        </div>
+                        <div>
+                            <img id="ctl00__ucUserInfo__imgLogo" class="headerImage mko-pull-right" src="../img/logo.svg" alt="Onsite auto dealership compliance and safety support services">
+                        </div>
+                        <div style="margin:2px 145px 2px 2px; font-size: 10pt; color:white;">
+                            <div class="mko-pull-right">
+                                <span id="ctl00__ucUserInfo__lblFullName">John Case</span> | <span id="ctl00__ucUserInfo__lblRole">Aacme Group</span>
                             </div>
-                            
-
-
-<div>
-    <img id="ctl00__ucUserInfo__imgLogo" class="headerImage mko-pull-right" src="./Onsite Training_files/New_KPA_logo.png" alt="Onsite auto dealership compliance and safety support services">
-</div>
-<div style="margin:2px 145px 2px 2px; font-size: 10pt; color:white;">
-    <div class="mko-pull-right">
-        <span id="ctl00__ucUserInfo__lblFullName">John Case</span> | <span id="ctl00__ucUserInfo__lblRole">Aacme Group</span>
-    </div>
-    <br>
-    <div class="topUserNav">
-        
-
-        <div class="topNav">
-                <div class="dropdown">
-                    <a class="dropdown-toggle" id="dropdownMenu1" data-toggle="dropdown" aria-haspopup="true" aria-expanded="true">My Group</a>
-                    <ul class="dropdown-menu">
-                            <li>
-                                <a href="https://www.mykpaonline.com/Clients/UserManagement.aspx" title="Manage Users">
-                                    <span>
-										Manage Users
-										
-									</span>
-                                </a>
-                            </li>
-                            <li>
-                                <a href="https://www.mykpaonline.com/Account/1901/ClientData/Edit" title="Manage Group Account">
-                                    <span>
-										Manage Group Account
-										
-									</span>
-                                </a>
-                            </li>
-                            <li>
-                                <a href="https://www.mykpaonline.com/Ehs/Summary" title="Manage My Facilities">
-                                    <span>
-										Manage My Facilities
-										
-									</span>
-                                </a>
-                            </li>
-                    </ul>
-                </div>
-        </div>
-        <div class="topNav">
-                <div class="dropdown">
-                    <a class="dropdown-toggle" id="dropdownMenu2" data-toggle="dropdown" aria-haspopup="true" aria-expanded="true">My Account</a>
-                    <ul class="dropdown-menu">
-                            <li>
-                                <a href="https://portal.mykpa.com/Account/ChangePassword?redirectUrl=https://www.mykpaonline.com/Clients/group/TrainingList.aspx?type=instructor&amp;logoutCallbackUrl=https://www.mykpaonline.com/Accounts/Logout" title="Password">
-                                    <span>
-										Password
-										
-									</span>
-                                </a>
-                            </li>
-                            <li>
-                                <a href="https://www.mykpaonline.com/Clients/MyPreferences.aspx" title="My Preferences">
-                                    <span>
-										My Preferences
-										
-									</span>
-                                </a>
-                            </li>
-                            <li>
-                                <a href="https://www.mykpaonline.com/Public/Logout.aspx" title="Logout">
-                                    <span>
-										Logout
-										
-									</span>
-                                </a>
-                            </li>
-                    </ul>
-                </div>
-        </div>
-
-    </div>
-</div>
+                            <br>
+                            <div class="topUserNav">
+                                <div class="topNav">
+                                    <div class="dropdown">
+                                        <a class="dropdown-toggle" id="dropdownMenu1" data-toggle="dropdown" aria-haspopup="true" aria-expanded="true">My Group</a>
+                                        <ul class="dropdown-menu">
+                                            <li>
+                                                <a href="https://www.mykpaonline.com/Clients/UserManagement.aspx" title="Manage Users">
+                                                    <span>
+                										Manage Users
+                										
+                									</span>
+                                                </a>
+                                            </li>
+                                            <li>
+                                                <a href="https://www.mykpaonline.com/Account/1901/ClientData/Edit" title="Manage Group Account">
+                                                    <span>
+                										Manage Group Account
+                										
+                									</span>
+                                                </a>
+                                            </li>
+                                            <li>
+                                                <a href="https://www.mykpaonline.com/Ehs/Summary" title="Manage My Facilities">
+                                                    <span>
+                										Manage My Facilities
+                										
+                									</span>
+                                                </a>
+                                            </li>
+                                        </ul>
+                                    </div>
+                                </div>
+                                <div class="topNav">
+                                    <div class="dropdown">
+                                        <a class="dropdown-toggle" id="dropdownMenu2" data-toggle="dropdown" aria-haspopup="true" aria-expanded="true">My Account</a>
+                                        <ul class="dropdown-menu">
+                                            <li>
+                                                <a href="https://portal.mykpa.com/Account/ChangePassword?redirectUrl=https://www.mykpaonline.com/Clients/group/TrainingList.aspx?type=instructor&amp;logoutCallbackUrl=https://www.mykpaonline.com/Accounts/Logout" title="Password">
+                                                    <span>
+                										Password
+                										
+                									</span>
+                                                </a>
+                                            </li>
+                                            <li>
+                                                <a href="https://www.mykpaonline.com/Clients/MyPreferences.aspx" title="My Preferences">
+                                                    <span>
+                										My Preferences
+                										
+                									</span>
+                                                </a>
+                                            </li>
+                                            <li>
+                                                <a href="https://www.mykpaonline.com/Public/Logout.aspx" title="Logout">
+                                                    <span>
+                										Logout
+                										
+                									</span>
+                                                </a>
+                                            </li>
+                                        </ul>
+                                    </div>
+                                </div>
+                            </div>
                         </div>
                     </div>
                 </div>
+
+                    <div id="outer">
+                        <div style="width: 100%; text-align: center;">
+                    <div id="ctl00_divNavMenu" class="header navHeader">
+                        <div class="topNav">
+                            <a href="https://www.mykpaonline.com/Clients/group/home.aspx">Home</a>
+                        </div>
+                        <div class="topNav">
+                            <div class="dropdown">
+                                <a class="dropdown-toggle" id="dropdownMenu2" data-toggle="dropdown" aria-haspopup="true" aria-expanded="true">Summary</a>
+                                <ul class="dropdown-menu">
+                                    <li>
+                                        <a href="https://www.mykpaonline.com/Ehs/Summary" title="Environmental Health &amp; Safety">
+                                            <span>
+                                                Environmental Health &amp; Safety
+                                                
+                                            </span>
+                                        </a>
+                                    </li>
+                                    <li>
+                                        <a href="https://www.mykpaonline.com/Sfc/Summary" title="Sales &amp; Finance Compliance">
+                                            <span>
+                                                Sales &amp; Finance Compliance
+                                                
+                                            </span>
+                                        </a>
+                                    </li>
+                                </ul>
+                            </div>
+                        </div>
+                        <div class="topNav">
+                            <div class="dropdown">
+                                <a class="dropdown-toggle" id="dropdownMenu3" data-toggle="dropdown" aria-haspopup="true" aria-expanded="true">Issues</a>
+                                <ul class="dropdown-menu">
+                                    <li>
+                                        <a href="https://www.mykpaonline.com/Clients/group/ActionItemList.aspx?filter=myopen" title="Issues List">
+                                            <span>
+                                                Issues List
+                                                
+                                            </span>
+                                        </a>
+                                    </li>
+                                    <li>
+                                        <a href="https://www.mykpaonline.com/Clients/group/SuggestionList.aspx" title="Suggestions">
+                                            <span>
+                                                Suggestions
+                                                
+                                                    <span class="badge badge-nav">2</span>
+                                            </span>
+                                        </a>
+                                    </li>
+                                    <li>
+                                        <a href="https://www.mykpaonline.com/Clients/group/IssueStats.aspx" title="Top 25 Issues">
+                                            <span>
+                                                Top 25 Issues
+                                                
+                                            </span>
+                                        </a>
+                                    </li>
+                                </ul>
+                            </div>
+                        </div>
+                        <div class="topNav">
+                            <div class="dropdown">
+                                <a class="dropdown-toggle" id="dropdownMenu4" data-toggle="dropdown" aria-haspopup="true" aria-expanded="true">Accidents</a>
+                                <ul class="dropdown-menu">
+                                    <li>
+                                        <a href="https://www.mykpaonline.com/Clients/group/AccidentList.aspx?filter=open" title="Accident List">
+                                            <span>
+                                                Accident List
+                                                
+                                            </span>
+                                        </a>
+                                    </li>
+                                    <li>
+                                        <a href="https://www.mykpaonline.com/Clients/group/AccidentList.aspx?add=true" title="Add an Accident">
+                                            <span>
+                                                Add an Accident
+                                                
+                                            </span>
+                                        </a>
+                                    </li>
+                                </ul>
+                            </div>
+                        </div>
+                        <div class="topNav">
+                            <div class="dropdown">
+                                <a class="dropdown-toggle" id="dropdownMenu5" data-toggle="dropdown" aria-haspopup="true" aria-expanded="true">Training</a>
+                                <ul class="dropdown-menu">
+                                    <li>
+                                        <a href="https://www.mykpaonline.com/Clients/group/MyTopics.aspx" title="My Training">
+                                            <span>
+                                                My Training
+                                                
+                                            </span>
+                                        </a>
+                                    </li>
+                                    <li>
+                                        <a href="https://www.mykpaonline.com/TrainingManagement/Summary" title="Training Management">
+                                            <span>
+                                                Training Management
+                                                
+                                            </span>
+                                        </a>
+                                    </li>
+                                    <li>
+                                        <a href="https://www.mykpaonline.com/Clients/group/TrainingList.aspx?type=instructor" title="Onsite Training">
+                                            <span>
+                                                Onsite Training
+                                                
+                                            </span>
+                                        </a>
+                                    </li>
+                                    <li>
+                                        <a href="https://www.mykpaonline.com/Commerce/TokenManagement.aspx" title="Token Management">
+                                            <span>
+                                                Token Management
+                                                
+                                            </span>
+                                        </a>
+                                    </li>
+                                </ul>
+                            </div>
+                        </div>
+                        <div class="topNav">
+                            <div class="dropdown">
+                                <a class="dropdown-toggle" id="dropdownMenu6" data-toggle="dropdown" aria-haspopup="true" aria-expanded="true">Documents</a>
+                                <ul class="dropdown-menu">
+                                    <li>
+                                        <a href="https://www.mykpaonline.com/Clients/group/Documents.aspx?Category=131" title="EHS Documents">
+                                            <span>
+                                                EHS Documents
+                                                
+                                            </span>
+                                        </a>
+                                    </li>
+                                    <li>
+                                        <a href="https://www.mykpaonline.com/Clients/group/Documents.aspx?Category=128" title="HR Documents">
+                                            <span>
+                                                HR Documents
+                                                
+                                            </span>
+                                        </a>
+                                    </li>
+                                    <li>
+                                        <a href="https://www.mykpaonline.com/Clients/group/Documents.aspx?Category=133" title="F&amp;I Documents">
+                                            <span>
+                                                F&amp;I Documents
+                                                
+                                            </span>
+                                        </a>
+                                    </li>
+                                    <li>
+                                        <a href="https://www.mykpaonline.com/Clients/group/Compare.aspx" title="Facility Comparison">
+                                            <span>
+                                                Facility Comparison
+                                                
+                                            </span>
+                                        </a>
+                                    </li>
+                                    <li>
+                                        <a href="https://www.mykpaonline.com/Clients/group/Reports.aspx?type=subscriptions" title="My Reports">
+                                            <span>
+                                                My Reports
+                                                
+                                            </span>
+                                        </a>
+                                    </li>
+                                </ul>
+                            </div>
+                        </div>
+                        <div class="topNav">
+                            <div class="dropdown">
+                                <a class="dropdown-toggle" id="dropdownMenu7" data-toggle="dropdown" aria-haspopup="true" aria-expanded="true">Recognition</a>
+                                <ul class="dropdown-menu">
+                                    <li>
+                                        <a href="https://www.mykpaonline.com/Clients/group/Recognition.aspx?Program=2" title="Environment and Safety Elite">
+                                            <span>
+                                                Environment and Safety Elite
+                                                
+                                            </span>
+                                        </a>
+                                    </li>
+                                </ul>
+                            </div>
+                        </div>
+                    </div>
+
+                <div class="clearfix">
+                </div>
+                <hr id="ctl00_hrNavMenu" class="navHr">
+                <div style="width:100%">
+                    <script language="javascript">
+                        function showFullAnnouncement() {
+                            $('#ctl00_ctlAnnouncement_divPartialAnnouncement').hide();
+                            $('#ctl00_ctlAnnouncement_divFullAnnouncement').show();
+                        }
+
+                    </script>
+                    <div id="ctl00_ctlAnnouncement_divPartialAnnouncement" class="announcement" style="display:none;">
+                    </div>
+                    <div id="ctl00_ctlAnnouncement_divFullAnnouncement" class="announcement full" style="display:none;">
+                    </div>
+                </div>
+                    </div>
+                </div>
             </div>
-            <div id="outerContainer">
-                <div id="outer">
-                    <div style="width: 100%; text-align: center;">
-                        <div id="ctl00_divNavMenu" class="header navHeader">
-                            
-
-        <div class="topNav">
-                <a href="https://www.mykpaonline.com/Clients/group/home.aspx">Home</a>
         </div>
-        <div class="topNav">
-                <div class="dropdown">
-                    <a class="dropdown-toggle" id="dropdownMenu2" data-toggle="dropdown" aria-haspopup="true" aria-expanded="true">Summary</a>
-                    <ul class="dropdown-menu">
-                            <li>
-                                <a href="https://www.mykpaonline.com/Ehs/Summary" title="Environmental Health &amp; Safety">
-                                    <span>
-										Environmental Health &amp; Safety
-										
-									</span>
-                                </a>
-                            </li>
-                            <li>
-                                <a href="https://www.mykpaonline.com/Sfc/Summary" title="Sales &amp; Finance Compliance">
-                                    <span>
-										Sales &amp; Finance Compliance
-										
-									</span>
-                                </a>
-                            </li>
-                    </ul>
-                </div>
-        </div>
-        <div class="topNav">
-                <div class="dropdown">
-                    <a class="dropdown-toggle" id="dropdownMenu3" data-toggle="dropdown" aria-haspopup="true" aria-expanded="true">Issues</a>
-                    <ul class="dropdown-menu">
-                            <li>
-                                <a href="https://www.mykpaonline.com/Clients/group/ActionItemList.aspx?filter=myopen" title="Issues List">
-                                    <span>
-										Issues List
-										
-									</span>
-                                </a>
-                            </li>
-                            <li>
-                                <a href="https://www.mykpaonline.com/Clients/group/SuggestionList.aspx" title="Suggestions">
-                                    <span>
-										Suggestions
-										
-										    <span class="badge badge-nav">2</span>
-									</span>
-                                </a>
-                            </li>
-                            <li>
-                                <a href="https://www.mykpaonline.com/Clients/group/IssueStats.aspx" title="Top 25 Issues">
-                                    <span>
-										Top 25 Issues
-										
-									</span>
-                                </a>
-                            </li>
-                    </ul>
-                </div>
-        </div>
-        <div class="topNav">
-                <div class="dropdown">
-                    <a class="dropdown-toggle" id="dropdownMenu4" data-toggle="dropdown" aria-haspopup="true" aria-expanded="true">Accidents</a>
-                    <ul class="dropdown-menu">
-                            <li>
-                                <a href="https://www.mykpaonline.com/Clients/group/AccidentList.aspx?filter=open" title="Accident List">
-                                    <span>
-										Accident List
-										
-									</span>
-                                </a>
-                            </li>
-                            <li>
-                                <a href="https://www.mykpaonline.com/Clients/group/AccidentList.aspx?add=true" title="Add an Accident">
-                                    <span>
-										Add an Accident
-										
-									</span>
-                                </a>
-                            </li>
-                    </ul>
-                </div>
-        </div>
-        <div class="topNav">
-                <div class="dropdown">
-                    <a class="dropdown-toggle" id="dropdownMenu5" data-toggle="dropdown" aria-haspopup="true" aria-expanded="true">Training</a>
-                    <ul class="dropdown-menu">
-                            <li>
-                                <a href="https://www.mykpaonline.com/Clients/group/MyTopics.aspx" title="My Training">
-                                    <span>
-										My Training
-										
-									</span>
-                                </a>
-                            </li>
-                            <li>
-                                <a href="https://www.mykpaonline.com/TrainingManagement/Summary" title="Training Management">
-                                    <span>
-										Training Management
-										
-									</span>
-                                </a>
-                            </li>
-                            <li>
-                                <a href="https://www.mykpaonline.com/Clients/group/TrainingList.aspx?type=instructor" title="Onsite Training">
-                                    <span>
-										Onsite Training
-										
-									</span>
-                                </a>
-                            </li>
-                            <li>
-                                <a href="https://www.mykpaonline.com/Commerce/TokenManagement.aspx" title="Token Management">
-                                    <span>
-										Token Management
-										
-									</span>
-                                </a>
-                            </li>
-                    </ul>
-                </div>
-        </div>
-        <div class="topNav">
-                <div class="dropdown">
-                    <a class="dropdown-toggle" id="dropdownMenu6" data-toggle="dropdown" aria-haspopup="true" aria-expanded="true">Documents</a>
-                    <ul class="dropdown-menu">
-                            <li>
-                                <a href="https://www.mykpaonline.com/Clients/group/Documents.aspx?Category=131" title="EHS Documents">
-                                    <span>
-										EHS Documents
-										
-									</span>
-                                </a>
-                            </li>
-                            <li>
-                                <a href="https://www.mykpaonline.com/Clients/group/Documents.aspx?Category=128" title="HR Documents">
-                                    <span>
-										HR Documents
-										
-									</span>
-                                </a>
-                            </li>
-                            <li>
-                                <a href="https://www.mykpaonline.com/Clients/group/Documents.aspx?Category=133" title="F&amp;I Documents">
-                                    <span>
-										F&amp;I Documents
-										
-									</span>
-                                </a>
-                            </li>
-                            <li>
-                                <a href="https://www.mykpaonline.com/Clients/group/Compare.aspx" title="Facility Comparison">
-                                    <span>
-										Facility Comparison
-										
-									</span>
-                                </a>
-                            </li>
-                            <li>
-                                <a href="https://www.mykpaonline.com/Clients/group/Reports.aspx?type=subscriptions" title="My Reports">
-                                    <span>
-										My Reports
-										
-									</span>
-                                </a>
-                            </li>
-                    </ul>
-                </div>
-        </div>
-        <div class="topNav">
-                <div class="dropdown">
-                    <a class="dropdown-toggle" id="dropdownMenu7" data-toggle="dropdown" aria-haspopup="true" aria-expanded="true">Recognition</a>
-                    <ul class="dropdown-menu">
-                            <li>
-                                <a href="https://www.mykpaonline.com/Clients/group/Recognition.aspx?Program=2" title="Environment and Safety Elite">
-                                    <span>
-										Environment and Safety Elite
-										
-									</span>
-                                </a>
-                            </li>
-                    </ul>
-                </div>
-        </div>
-</div>
-                    </div>
-                    <div class="clearfix"></div>
-                    <hr id="ctl00_hrNavMenu" class="navHr">
-                    <div style="width:100%">
-                        
-
-<script language="javascript">
-    function showFullAnnouncement() {
-        $('#ctl00_ctlAnnouncement_divPartialAnnouncement').hide();
-        $('#ctl00_ctlAnnouncement_divFullAnnouncement').show();
-    }
-
-</script>
-<div id="ctl00_ctlAnnouncement_divPartialAnnouncement" class="announcement" style="display:none;">
-</div>
-<div id="ctl00_ctlAnnouncement_divFullAnnouncement" class="announcement full" style="display:none;">
-</div>
-
-                    </div>
-                    <div id="bodyContentContainer">
-                        
-
+        <div id="outerContainer">
+            <div id="outer">
+                
+                <div id="bodyContentContainer">
 <h1>Onsite Training</h1>
 
 <div id="ctl00__cphMain__updatePanel">
@@ -721,7 +536,7 @@ Sys.WebForms.PageRequestManager._initialize('ctl00$_scriptManager', 'aspnetForm'
         <table class="table" id="mainlist" cellpadding="2" style="width: 100%" cellspacing="0">
             
         <tbody><tr class="">
-            <td width="180" id="290868">
+            <td width="300" id="290868">
                 <div class="row">
                     <label>Date:</label>
                     <span id="ctl00__cphMain__ucTrainingListView__lvTrainings_ctrl0__lblTrainingDate">12/2/2016</span>
@@ -758,15 +573,23 @@ Sys.WebForms.PageRequestManager._initialize('ctl00$_scriptManager', 'aspnetForm'
                     
                 </div>
             </td>
-            <td width="100">
-                <a id="ctl00__cphMain__ucTrainingListView__lvTrainings_ctrl0_lbAdminister" class="btn btn-primary" href="javascript:__doPostBack(&#39;ctl00$_cphMain$_ucTrainingListView$_lvTrainings$ctrl0$lbAdminister&#39;,&#39;&#39;)" style="margin-bottom: 3px;">Administer</a>
-                
-                <a id="ctl00__cphMain__ucTrainingListView__lvTrainings_ctrl0__lnkAddUser" title="Add Users To Training" class="btn btn-secondary" onclick="GetAssociatedStudents(290868,31,&#39;FacilityDetail.aspx?AccountId=31&amp;tabName=People&#39;);return false;" target="_blank">Add Users</a>
+            <td width="200">
+                <!-- Split button -->
+                <div class="btn-group">
+                  <button type="button" class="btn btn">Administer</button>
+                  <button type="button" class="btn btn dropdown-toggle" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
+                    <span class="caret"></span>
+                    <span class="sr-only">Toggle Dropdown</span>
+                  </button>
+                  <ul class="dropdown-menu">
+                    <li><a href="#">Add Users</a></li>
+                  </ul>
+                </div>
             </td>
         </tr>
     
         <tr class="alt">
-            <td width="180" id="268379">
+            <td width="300" id="268379">
                 <div class="row">
                     <label>Date:</label>
                     <span id="ctl00__cphMain__ucTrainingListView__lvTrainings_ctrl1__lblTrainingDate">11/13/2016</span>
@@ -804,14 +627,23 @@ Sys.WebForms.PageRequestManager._initialize('ctl00$_scriptManager', 'aspnetForm'
                 </div>
             </td>
             <td width="100">
-                <a id="ctl00__cphMain__ucTrainingListView__lvTrainings_ctrl1_lbAdminister" class="btn btn-primary" href="javascript:__doPostBack(&#39;ctl00$_cphMain$_ucTrainingListView$_lvTrainings$ctrl1$lbAdminister&#39;,&#39;&#39;)" style="margin-bottom: 3px;">Administer</a>
-                <a id="ctl00__cphMain__ucTrainingListView__lvTrainings_ctrl1__lnkRoster" title="Download Training Roster" class="btn btn-secondary" href="https://www.mykpaonline.com/GetAttachment.axd?AttachmentId=2050048" target="_blank" style="margin-bottom: 3px;">Open Roster</a>
-                <a id="ctl00__cphMain__ucTrainingListView__lvTrainings_ctrl1__lnkAddUser" title="Add Users To Training" class="btn btn-secondary" onclick="GetAssociatedStudents(268379,1554,&#39;FacilityDetail.aspx?AccountId=1554&amp;tabName=People&#39;);return false;" target="_blank">Add Users</a>
+                <!-- Split button -->
+                <div class="btn-group">
+                  <button type="button" class="btn btn">Administer</button>
+                  <button type="button" class="btn btn dropdown-toggle" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
+                    <span class="caret"></span>
+                    <span class="sr-only">Toggle Dropdown</span>
+                  </button>
+                  <ul class="dropdown-menu">
+                    <li><a href="#">Open Roster</a></li>
+                    <li><a href="#">Add Users</a></li>
+                  </ul>
+                </div>
             </td>
         </tr>
     
         <tr class="">
-            <td width="180" id="256017">
+            <td width="300" id="256017">
                 <div class="row">
                     <label>Date:</label>
                     <span id="ctl00__cphMain__ucTrainingListView__lvTrainings_ctrl2__lblTrainingDate">10/14/2016</span>
@@ -849,14 +681,22 @@ Sys.WebForms.PageRequestManager._initialize('ctl00$_scriptManager', 'aspnetForm'
                 </div>
             </td>
             <td width="100">
-                <a id="ctl00__cphMain__ucTrainingListView__lvTrainings_ctrl2_lbAdminister" class="btn btn-primary" href="javascript:__doPostBack(&#39;ctl00$_cphMain$_ucTrainingListView$_lvTrainings$ctrl2$lbAdminister&#39;,&#39;&#39;)" style="margin-bottom: 3px;">Administer</a>
-                
-                <a id="ctl00__cphMain__ucTrainingListView__lvTrainings_ctrl2__lnkAddUser" title="Add Users To Training" class="btn btn-secondary" onclick="GetAssociatedStudents(256017,31,&#39;FacilityDetail.aspx?AccountId=31&amp;tabName=People&#39;);return false;" target="_blank">Add Users</a>
+                <!-- Split button -->
+                <div class="btn-group">
+                  <button type="button" class="btn btn">Administer</button>
+                  <button type="button" class="btn btn dropdown-toggle" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
+                    <span class="caret"></span>
+                    <span class="sr-only">Toggle Dropdown</span>
+                  </button>
+                  <ul class="dropdown-menu">
+                    <li><a href="#">Add Users</a></li>
+                  </ul>
+                </div>
             </td>
         </tr>
     
         <tr class="alt">
-            <td width="180" id="220945">
+            <td width="300" id="220945">
                 <div class="row">
                     <label>Date:</label>
                     <span id="ctl00__cphMain__ucTrainingListView__lvTrainings_ctrl3__lblTrainingDate">7/22/2016</span>
@@ -894,14 +734,22 @@ Sys.WebForms.PageRequestManager._initialize('ctl00$_scriptManager', 'aspnetForm'
                 </div>
             </td>
             <td width="100">
-                <a id="ctl00__cphMain__ucTrainingListView__lvTrainings_ctrl3_lbAdminister" class="btn btn-primary" href="javascript:__doPostBack(&#39;ctl00$_cphMain$_ucTrainingListView$_lvTrainings$ctrl3$lbAdminister&#39;,&#39;&#39;)" style="margin-bottom: 3px;">Administer</a>
-                
-                <a id="ctl00__cphMain__ucTrainingListView__lvTrainings_ctrl3__lnkAddUser" title="Add Users To Training" class="btn btn-secondary" onclick="GetAssociatedStudents(220945,4185,&#39;FacilityDetail.aspx?AccountId=4185&amp;tabName=People&#39;);return false;" target="_blank">Add Users</a>
+                <!-- Split button -->
+                <div class="btn-group">
+                  <button type="button" class="btn btn">Administer</button>
+                  <button type="button" class="btn btn dropdown-toggle" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
+                    <span class="caret"></span>
+                    <span class="sr-only">Toggle Dropdown</span>
+                  </button>
+                  <ul class="dropdown-menu">
+                    <li><a href="#">Add Users</a></li>
+                  </ul>
+                </div>
             </td>
         </tr>
     
         <tr class="">
-            <td width="180" id="93714">
+            <td width="300" id="93714">
                 <div class="row">
                     <label>Date:</label>
                     <span id="ctl00__cphMain__ucTrainingListView__lvTrainings_ctrl4__lblTrainingDate">6/9/2016</span>
@@ -939,14 +787,23 @@ Sys.WebForms.PageRequestManager._initialize('ctl00$_scriptManager', 'aspnetForm'
                 </div>
             </td>
             <td width="100">
-                <a id="ctl00__cphMain__ucTrainingListView__lvTrainings_ctrl4_lbAdminister" class="btn btn-primary" href="javascript:__doPostBack(&#39;ctl00$_cphMain$_ucTrainingListView$_lvTrainings$ctrl4$lbAdminister&#39;,&#39;&#39;)" style="margin-bottom: 3px;">Administer</a>
-                <a id="ctl00__cphMain__ucTrainingListView__lvTrainings_ctrl4__lnkRoster" title="Download Training Roster" class="btn btn-secondary" href="https://www.mykpaonline.com/GetAttachment.axd?AttachmentId=1394714" target="_blank" style="margin-bottom: 3px;">Open Roster</a>
-                <a id="ctl00__cphMain__ucTrainingListView__lvTrainings_ctrl4__lnkAddUser" title="Add Users To Training" class="btn btn-secondary" onclick="GetAssociatedStudents(93714,31,&#39;FacilityDetail.aspx?AccountId=31&amp;tabName=People&#39;);return false;" target="_blank">Add Users</a>
+                <!-- Split button -->
+                <div class="btn-group">
+                  <button type="button" class="btn btn">Administer</button>
+                  <button type="button" class="btn btn dropdown-toggle" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
+                    <span class="caret"></span>
+                    <span class="sr-only">Toggle Dropdown</span>
+                  </button>
+                  <ul class="dropdown-menu">
+                    <li><a href="#">Open Roster</a></li>
+                    <li><a href="#">Add Users</a></li>
+                  </ul>
+                </div>
             </td>
         </tr>
     
         <tr class="alt">
-            <td width="180" id="159558">
+            <td width="300" id="159558">
                 <div class="row">
                     <label>Date:</label>
                     <span id="ctl00__cphMain__ucTrainingListView__lvTrainings_ctrl5__lblTrainingDate">2/29/2016</span>
@@ -984,14 +841,12 @@ Sys.WebForms.PageRequestManager._initialize('ctl00$_scriptManager', 'aspnetForm'
                 </div>
             </td>
             <td width="100">
-                
-                
-                <a id="ctl00__cphMain__ucTrainingListView__lvTrainings_ctrl5__lnkAddUser" title="Add Users To Training" class="btn btn-secondary" onclick="GetAssociatedStudents(159558,31,&#39;FacilityDetail.aspx?AccountId=31&amp;tabName=People&#39;);return false;" target="_blank">Add Users</a>
+                  <button type="button" class="btn btn">Add Users</button>
             </td>
         </tr>
     
         <tr class="">
-            <td width="180" id="90369">
+            <td width="300" id="90369">
                 <div class="row">
                     <label>Date:</label>
                     <span id="ctl00__cphMain__ucTrainingListView__lvTrainings_ctrl6__lblTrainingDate">1/5/2016</span>
@@ -1029,9 +884,7 @@ Sys.WebForms.PageRequestManager._initialize('ctl00$_scriptManager', 'aspnetForm'
                 </div>
             </td>
             <td width="100">
-                
-                
-                <a id="ctl00__cphMain__ucTrainingListView__lvTrainings_ctrl6__lnkAddUser" title="Add Users To Training" class="btn btn-secondary" onclick="GetAssociatedStudents(90369,31,&#39;FacilityDetail.aspx?AccountId=31&amp;tabName=People&#39;);return false;" target="_blank">Add Users</a>
+                <button type="button" class="btn btn">Add Users</button>
             </td>
         </tr>
     
@@ -1121,7 +974,7 @@ Sys.WebForms.PageRequestManager._initialize('ctl00$_scriptManager', 'aspnetForm'
 </script>
 
 <div class="clientFooter gradientHeaderAndFooter" style="height:120px;">
-    <div style="width: 1024px; margin-right:auto;margin-left:auto;">
+    <div style="width: 1024px; margin-right:auto;margin-left:auto;margin-bottom:50px;">
         <div id="ctl00_ctlClientFooter_divConsultantInfo" class="clientFooterSection">
             <div class="clientFooterSectionHeader">Contact Your KPA Consultant</div>
             <div id="ctl00_ctlClientFooter_divFtrPhoto" class="clientFooterImage">
