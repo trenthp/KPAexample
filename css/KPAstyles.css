@@ -217,7 +217,8 @@ a.k-button-bare:hover, a.k-button:hover {
   color: #fff; }
 
 .button.primary:hover, .button.primary:focus {
-  background-color: #333f48; }
+  background-color: #333f48;
+  color: #fff; }
 
 .button.secondary {
   background-color: #0085ad;
@@ -240,6 +241,38 @@ a.k-button-bare:hover, a.k-button:hover {
 .btn-group > .btn {
   margin-left: 1px;
   margin-right: 0; }
+
+.button.hollow {
+  background: none;
+  border: 1px solid #c1c6c8;
+  color: #333f48; }
+
+.button.hollow:hover, .button.hollow:focus {
+  background: #c1c6c8; }
+
+.button.hollow.primary {
+  border: 1px solid #5c656d;
+  color: #333f48; }
+
+.button.hollow.primary:hover, .button.hollow.primary:focus {
+  background-color: #5c656d;
+  color: #fff; }
+
+.button.hollow.secondary {
+  border: 1px solid #0085ad;
+  color: #0085ad; }
+
+.button.hollow.secondary:hover, .button.hollow.secondary:focus {
+  background-color: #0085ad;
+  color: #fff; }
+
+.button.hollow.tertiary {
+  border: 1px solid #f9423a;
+  color: #f9423a; }
+
+.button.hollow.tertiary:hover, .button.hollow.tertiary:focus {
+  background-color: #f9423a;
+  color: #fff; }
 
 table {
   width: 100%;
@@ -353,7 +386,7 @@ div.topUserNav > div.topNav > div.dropdown > a {
 
 /*---------- Tables ----------*/
 .k-alt {
-  background-color: #fefefe; }
+  background-color: #f5f5f5; }
 
 .k-grid tr td {
   border: none;
@@ -372,7 +405,8 @@ table thead tr, table thead th, table thead td, table tfoot th, table tfoot td {
 .table thead {
   border-top: 1px solid #e0e0e0;
   background-color: #f3f4f4;
-  font-weight: 600; }
+  font-weight: 600;
+  padding: 18px 10px 18px 10px; }
 
 .k-grid tr td {
   border-bottom: 1px solid #e0e0e0; }
@@ -471,6 +505,19 @@ table tbody {
 .hrm-breadcrumb .row > :first-child > a:hover {
   color: #0085ad; }
 
+.k-state-selected {
+  background-color: #ccdbe4;
+  border: #ccc;
+  box-shadow: none;
+  color: #333f48; }
+
+ul .k-state-selected {
+  line-height: 2.3; }
+
+.k-pager-numbers {
+  background-color: #ccdbe4;
+  color: #333f48; }
+
 /*--------- MKO specific ----------*/
 #outerContainer:before {
   box-shadow: none;
@@ -533,9 +580,12 @@ div.topNav > div.dropdown > a {
   border-bottom: 3px solid #f1f1f1;
   margin-bottom: 15px; }
 
+.clientFooter {
+  color: #333f48; }
+
 /*------- Succeed specific --------*/
 .pnlMainMenu {
-  background-color: #fff; }
+  background-color: #f3f4f4; }
 
 .SucceedMenu {
   padding-top: 20px; }
@@ -591,14 +641,17 @@ div.topNav > div.dropdown > a {
 .table-striped > tbody > tr:nth-of-type(odd) {
   background-color: #fefefe; }
 
+.table-striped > tbody > tr:nth-of-type(even) {
+  background-color: #f5f5f5; }
+
 .table-hover > tbody > tr:hover {
   background: #ccdbe4; }
 
-.table tbody td:hover a {
+.table tbody .stringcol:hover a {
   background: #ccdbe4;
   color: #0085ad; }
 
-.table tbody tr:hover td a {
+.table tbody .MultipleSelectRow:hover td a {
   background: #ccdbe4;
   color: #0085ad; }
 
@@ -629,5 +682,9 @@ thead tr th table tbody tr td {
 
 .pager-button {
   margin-right: 0; }
+
+.SearchBar .input-group-addon {
+  color: #333f48;
+  background-color: #c1c6c8; }
 
 /*# sourceMappingURL=KPAstyles.css.map */
